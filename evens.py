@@ -7,7 +7,14 @@ def even_number_of_evens(numbers):
     if the number of numbers is 0, return False
     if the number of even numbers is even, return True
     """
-    return None
+    return True
 
 
-print(even_number_of_evens(5))
+
+"""
+when python runs a file directly it considers it as main file which is not the case here. But we
+want python to run only the things which we test, that is why we need to tell python
+which file is our main file.
+"""
+if __name__ =='__main__':
+    print(even_number_of_evens(5))
